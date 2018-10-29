@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
+import Nav from './Components/Nav';
+import Home from './Components/Home';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        Ivy Kroncke
-      </div>
+      <Router>
+        <Switch>
+            <Route exact path='/' component={Home} />
+        </Switch>
+      </Router>
     );
   }
 }
