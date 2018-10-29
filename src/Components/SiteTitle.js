@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const TitleStyle = styled.div`
-  padding-top: 8vh;
+  padding-top: 10vh;
   text-align: center;
 `
 

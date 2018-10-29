@@ -3,6 +3,7 @@ import Content from './Content'
 import styled from 'styled-components'
 import SiteTitle from './SiteTitle';
 import Footer from './Footer';
+import 'semantic-ui-css/semantic.min.css';
 
 const HomeWrapper = styled.div`
     height: 100vh;
