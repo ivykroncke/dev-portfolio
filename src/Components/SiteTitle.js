@@ -2,15 +2,16 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const TitleStyle = styled.div`
-  padding-top: 10vh;
-  text-align: center;
+color: white;
+padding: 15vh 15vh 5vh 15vh;
+  margin-left: 10vw;
+  text-align: left;
 `
 
 const Ivy = styled.div`
-    text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 3vh;
+    font-size: 4rem;
+    margin-bottom: 7vh;
 `
 
 const TagLine = styled.div`
@@ -26,7 +27,7 @@ export default class SiteTitle extends Component {
                     IVY KRONCKE
                 </Ivy>
                 <TagLine>
-                    FULL-STACK WEB DEVELOPER IN ATLANTA, GA
+                    IS A WEB DEVELOPER IN ATLANTA, GEORGIA.
                 </TagLine>
             </TitleStyle>
         )
