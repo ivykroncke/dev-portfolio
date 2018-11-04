@@ -17,12 +17,11 @@ const HomeWrapper = styled.div`
 const ImageLayer = styled.div`
     background-image: url('/img/ivyworking.jpg');
     background-size: 110%;
-    opacity: .85;
     background-position: center;
 `
 
 const ContentWrapper = styled.div`
-    background-color: rgba(92, 147, 203, 0.75);
+    background-color: rgba(92, 147, 203, 0.65);
     display: flex;
     align-items: space-around;
     justify-content: flex-start;
@@ -30,6 +29,7 @@ const ContentWrapper = styled.div`
     background-size: cover;
     width: 98vw;
     height: 98vh;
+    text-shadow: 2px 2px 10px rgba(60, 81, 107, 0.93);
 `
 
 export default class Home extends Component {
