@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import 'semantic-ui-css/semantic.min.css';
 import Footer from './Footer';
 import Nav from './Nav';
-import Main from './Main';
+import About from './About';
+import Portfolio from './Portfolio';
+import Welcome from './Welcome';
 
 const HomeWrapper = styled.div`
-height: 100vh;
-border: 1rem solid white;
-background-color: rgb(148, 165, 174);
+background-color: white;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -21,7 +21,9 @@ export default class Home extends Component {
         return (
             <HomeWrapper>
                 <Nav />
-                <Main />
+                <Welcome />
+                <About />
+                <Portfolio />
                 <Footer />
             </HomeWrapper>
         )

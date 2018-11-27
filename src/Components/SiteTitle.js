@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 const Ivy = styled.div`
-color: white;
+color: rgb(148, 165, 174);
 font-family: 'Bitter', sans-serif;
 text-align: left;
 font-size: 6vh;
@@ -15,7 +15,7 @@ ${media.lessThan('medium')`
 export default class SiteTitle extends Component {
     render() {
         return (
-             <Ivy>ivy kroncke;</Ivy>
+             <Ivy>ivy kroncke</Ivy>
         )
     }
 }

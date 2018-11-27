@@ -3,61 +3,40 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 const AboutContainer = styled.div`
-width: 75vw;
+border-radius: 5rem;
+margin: 10vh;
 display: flex;
-justify-content: center;
+flex-direction: column;
+justify-content: space-around;
 align-items: center;
-${media.lessThan('medium')`
-    flex-direction: column;
-  `}
 `
 
 const StyledImage = styled.div`
+height: 30vh;
+width: 30vh;
+margin: 10vh;
 background-image: url('/img/ivyworking.jpg');
 background-size: cover;
 background-position: right;
-width: 15rem;
-height: 15rem;
-border-radius: 2vh;
-border: white .25rem solid;
-${media.lessThan('medium')`
-    height: 10rem;
-  `}
+border-radius: 100%;
 `
 
-const TextContainer = styled.div`
-padding-left: 4vw;
-width: 25rem;
-height: 15rem;
-font-size: .75rem;
-${media.lessThan('medium')`
-    font-size: 1rem;
-    width: 90%;
-    margin: 5vh 0 10vh 0;
-  `}
-`
-
-const AboutHeading = styled.h3`
-font-family: Bitter;
-`
-
-const Space = styled.div`
-height: 1rem;
+const AboutTextContainer = styled.div`
+width: 75vw;
+margin-left: 5vw;
+word-wrap: normal;
 `
 
 export default class About extends Component {
   render() {
     return (
       <AboutContainer>
-        <StyledImage></StyledImage>
-        <TextContainer>
-          <AboutHeading>Ivy is a full-stack web developer and designer in Atlanta, Georgia.</AboutHeading>
-          <div>Web Developer with a love of design and a meticulous eye for details. Obsessed with going beyond what is required to make beautiful, ingenious websites and applications.</div>
-          <Space />
-          <div>Technologies Used:</div>
-          <div>JavaScript, React, Ruby, Ruby on Rails</div>
-          <div>MongoDB, Mongoose, SQL, Postgresql</div>
-        </TextContainer>
+        <AboutTextContainer>
+          <h3>Ivy Kroncke</h3>
+          <p>is a full-stack web developer with a background in fine arts including painting and printmaking. After receiving her Bachelor's of Fine Art from the Lamar Dodd School of Art, she worked in the interior design and art nonprofit industries. Looking for a new challenge, Kroncke completed an immersive thirteen week course in Web Development from General Assembly.</p>
+          <p>Kroncke brings her design talents to web projects, combining problem-solving skills in coding with an eye for color and composition.</p>
+        </AboutTextContainer>
+        <StyledImage />
       </AboutContainer>
     )
   }

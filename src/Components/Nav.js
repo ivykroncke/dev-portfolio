@@ -4,32 +4,31 @@ import SiteTitle from './SiteTitle';
 import media from 'styled-media-query';
 
 const NavContainer = styled.div`
-margin: 5vh 5vw;
-padding: 5vh 5vw 0 5vh;
+height: 15vh;
 width: 90vw;
+padding: 3vw;
 display: flex;
 justify-content: space-between;
 align-items: center;
-  ${media.lessThan('medium')`
+  ${media.lessThan('600px')`
     flex-direction: column;
     margin: 3vh 3vw;
   `}
 `
 
 const NavItemsContainer = styled.div`
-height: 100%;
 max-width: 90vw;
 display: flex;
+align-items: center;
 font-size: 1rem;
-${media.lessThan('medium')`
+${media.lessThan('600px')`
     margin-top: 4vh;
-    font-size: .75rem;
   `}
 `
 
 const StyledNavItem = styled.a`
 color: white;
-padding: 0 1rem 0 1rem;
+padding: 0 1rem 2vh 1rem;
 text-transform: uppercase;
 `
 
@@ -41,7 +40,6 @@ export default class Nav extends Component {
         <NavItemsContainer>
           <StyledNavItem><div>About</div></StyledNavItem>
           <StyledNavItem href='https://github.com/ivykroncke' target='blank'><div>Portfolio</div></StyledNavItem>
-          <StyledNavItem href='mailto:ivy.lane.kroncke@gmail.com?Subject=Hello!'><div>Contact</div></StyledNavItem>
         </NavItemsContainer>
       </NavContainer>
     )

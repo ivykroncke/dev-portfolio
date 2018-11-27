@@ -1,22 +1,21 @@
 import React, { Component } from 'react'
 import About from './About';
 import Portfolio from './Portfolio';
-import Contact from './Contact';
+import styled from 'styled-components'
+import Welcome from './Welcome';
+
+const MainContainer = styled.div`
+width: 100%;
+height: 89vh;
+`
 
 export default class Main extends Component {
-    state = {
-        showAbout: true,
-        showPortfolio: false,
-        showContact: false
-    }
 
   render() {
     return (
-      <div>
-        {this.state.showAbout ? (<About />): null}
-        {this.state.showPortfolio? (<Portfolio />): null}
-        {this.state.showContact? (<Contact />): null}
-      </div>
+      <MainContainer>
+        <Welcome />
+      </MainContainer>
     )
   }
 }
