@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import SiteTitle from './SiteTitle';
 import 'semantic-ui-css/semantic.min.css';
 import Footer from './Footer';
 import Nav from './Nav';
