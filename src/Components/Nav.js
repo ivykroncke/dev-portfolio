@@ -27,7 +27,7 @@ ${media.lessThan('medium')`
   `}
 `
 
-const StyledNavItem = styled.div`
+const StyledNavItem = styled.a`
 color: white;
 padding: 0 1rem 0 1rem;
 text-transform: uppercase;
@@ -40,8 +40,8 @@ export default class Nav extends Component {
         <SiteTitle />
         <NavItemsContainer>
           <StyledNavItem><div>About</div></StyledNavItem>
-          <StyledNavItem><div>Portfolio</div></StyledNavItem>
-          <StyledNavItem><div>Contact</div></StyledNavItem>
+          <StyledNavItem href='https://github.com/ivykroncke' target='blank'><div>Portfolio</div></StyledNavItem>
+          <StyledNavItem href='mailto:ivy.lane.kroncke@gmail.com?Subject=Hello!'><div>Contact</div></StyledNavItem>
         </NavItemsContainer>
       </NavContainer>
     )
