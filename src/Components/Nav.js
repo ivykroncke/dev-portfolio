@@ -1,26 +1,39 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import SiteTitle from './SiteTitle';
 
-const StyledNav = styled.div`
-  padding: 6vh 12.5vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+const NavContainer = styled.div`
+margin: 5vh 5vw;
+width: 90vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
 `
 
-const NavItem = styled.div`
-  width: 15vw;
-  height: 15vw;
-  background-color: hotpink;
-  padding: 1rem;
+const NavItemsContainer = styled.div`
+height: 100%;
+max-width: 90vw;
+display: flex;
+`
+
+const StyledNavItem = styled.div`
+color: white;
+font-size: 1rem;
+padding: 0 1rem 0 1rem;
+text-transform: uppercase;
 `
 
 export default class Nav extends Component {
   render() {
     return (
-      <StyledNav>
-        Alt Nav
-      </StyledNav>
+      <NavContainer>
+        <SiteTitle />
+        <NavItemsContainer>
+          <StyledNavItem><div>About</div></StyledNavItem>
+          <StyledNavItem><div>Portfolio</div></StyledNavItem>
+          <StyledNavItem><div>Contact</div></StyledNavItem>
+        </NavItemsContainer>
+      </NavContainer>
     )
   }
 }
