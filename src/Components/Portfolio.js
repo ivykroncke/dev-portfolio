@@ -4,7 +4,8 @@ import { Icon } from 'semantic-ui-react'
 
 const PortfolioContainer = styled.div`
 width: 100vw;
-margin: 10vh 10vw 0 10vw;
+padding-top: 4vh;
+margin: 5vh 10vw 0 10vw;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -45,7 +46,7 @@ padding: 2vh 1vw;
 export default class Portfolio extends Component {
   render() {
     return (
-      <PortfolioContainer>
+      <PortfolioContainer id='portfolio'>
         <StyledHThree>
           Select Portfolio
         </StyledHThree>

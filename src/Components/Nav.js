@@ -38,8 +38,8 @@ export default class Nav extends Component {
       <NavContainer>
         <SiteTitle />
         <NavItemsContainer>
-          <StyledNavItem><div>About</div></StyledNavItem>
-          <StyledNavItem href='https://github.com/ivykroncke' target='blank'><div>Portfolio</div></StyledNavItem>
+          <StyledNavItem href='#about'><div>About</div></StyledNavItem>
+          <StyledNavItem href='#portfolio'><div>Portfolio</div></StyledNavItem>
         </NavItemsContainer>
       </NavContainer>
     )
