@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react'
 import media from 'styled-media-query'
 
 const FooterWrapper = styled.div`
-background-color: rgba(148, 165, 174, .5);
+background-color: rgb(148, 165, 174);
 width: 100vw;
 display: flex;
 align-items: center;
@@ -33,9 +33,9 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <StyledFooter>
-          <a href='https://github.com/ivykroncke/' target='blank'><FooterIcon name='github' size='large' /></a>
-          <a href='mailto:ivy.lane.kroncke@gmail.com'><FooterIcon name='mail' size='large' /></a>
-          <a href='https://www.linkedin.com/in/ivykroncke/' target='blank'><FooterIcon name='linkedin' size='large' /></a>
+          <a href='https://github.com/ivykroncke/' target='blank'><FooterIcon name='github' size='large' inverted /></a>
+          <a href='mailto:ivy.lane.kroncke@gmail.com'><FooterIcon name='mail' size='large' inverted /></a>
+          <a href='https://www.linkedin.com/in/ivykroncke/' target='blank'><FooterIcon name='linkedin' size='large' inverted/></a>
         </StyledFooter>
       </FooterWrapper>
     )
