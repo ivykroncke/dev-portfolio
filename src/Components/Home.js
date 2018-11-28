@@ -22,8 +22,8 @@ export default class Home extends Component {
             <HomeWrapper>
                 <Nav />
                 <Welcome />
-                <About />
                 <Portfolio />
+                <About />
                 <Footer />
             </HomeWrapper>
         )
