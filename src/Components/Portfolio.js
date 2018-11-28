@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Icon } from 'semantic-ui-react'
+import media from 'styled-media-query'
 
 const PortfolioContainer = styled.div`
 width: 100vw;
@@ -13,7 +14,6 @@ justify-content: center;
 `
 
 const StyledHThree = styled.h3`
-
 `
 
 const ProjectList = styled.div`
@@ -23,6 +23,10 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: auto;
 grid-gap: 5vw;
 text-align: center;
+${media.lessThan('600px')`
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+  `}
 `
 
 const CustomCard = styled.div`

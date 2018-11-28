@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import SiteTitle from './SiteTitle';
 import media from 'styled-media-query';
+import { Icon, Menu, Dropdown } from 'semantic-ui-react'
 
 const NavContainer = styled.div`
 height: 15vh;
@@ -11,18 +12,17 @@ display: flex;
 justify-content: space-between;
 align-items: center;
   ${media.lessThan('600px')`
-    flex-direction: column;
-    margin: 3vh 3vw;
+    justify-content: center;
   `}
 `
 
 const NavItemsContainer = styled.div`
 max-width: 90vw;
-display: flex;
+display: flex; 
 align-items: center;
 font-size: 1rem;
 ${media.lessThan('600px')`
-    margin-top: 4vh;
+  display: none;
   `}
 `
 
@@ -41,6 +41,7 @@ export default class Nav extends Component {
           <StyledNavItem href='#about'><div>About</div></StyledNavItem>
           <StyledNavItem href='#portfolio'><div>Portfolio</div></StyledNavItem>
         </NavItemsContainer>
+          {/* <Dropdown item><Icon name="bars" /></Dropdown> */}
       </NavContainer>
     )
   }

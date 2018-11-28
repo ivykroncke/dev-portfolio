@@ -22,6 +22,7 @@ background-image: url('/img/ivy-headshot.jpg');
 background-size: cover;
 background-position: right;
 border-radius: 100%;
+border: white solid .25rem;
 `
 
 const AboutTextContainer = styled.div`
