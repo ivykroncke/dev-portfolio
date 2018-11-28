@@ -12,7 +12,11 @@ display: flex;
 justify-content: space-between;
 align-items: center;
   ${media.lessThan('600px')`
-    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    padding: 5vh 5vw;
+    justify-content: flex-end;
+    align-items: flex-end;
   `}
 `
 
@@ -38,8 +42,8 @@ export default class Nav extends Component {
       <NavContainer>
         <SiteTitle />
         <NavItemsContainer>
-          <StyledNavItem href='#about'><div>About</div></StyledNavItem>
           <StyledNavItem href='#portfolio'><div>Portfolio</div></StyledNavItem>
+          <StyledNavItem href='#about'><div>About</div></StyledNavItem>
         </NavItemsContainer>
           {/* <Dropdown item><Icon name="bars" /></Dropdown> */}
       </NavContainer>

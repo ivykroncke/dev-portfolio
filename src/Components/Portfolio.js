@@ -13,7 +13,8 @@ align-items: center;
 justify-content: center;
 `
 
-const StyledHThree = styled.h3`
+const StyledHThree = styled.div`
+font-size: 1.75rem;
 `
 
 const ProjectList = styled.div`
@@ -30,11 +31,30 @@ ${media.lessThan('600px')`
 `
 
 const CustomCard = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 5vh;
 `
 
 const PortfolioThumbnail = styled.img`
 height: 50vh;
 box-shadow: .75rem .75rem 1.5rem rgba(91, 91, 91, 0.58);
+`
+
+const PortfolioTitle = styled.div`
+font-size: 1.5rem;
+padding: 4vh 0 2vh 0;
+`
+
+const PortfolioDescription = styled.div`
+width: 20vw;
+font-size: 1rem;
+align-self: center;
+${media.lessThan('600px')`
+    width: 40vw;
+`}
 `
 
 const IconContainer = styled.div`
@@ -54,34 +74,39 @@ export default class Portfolio extends Component {
         <StyledHThree>
           Select Portfolio
         </StyledHThree>
+
         <ProjectList>
+
           <CustomCard>
             <PortfolioThumbnail src='/img/pantry.jpg' alt='pantry' />
-            <h4>Pantry</h4>
-            <div>A meal-planning app with exportable grocery lists.</div>
+            <PortfolioTitle>Pantry</PortfolioTitle>
+            <PortfolioDescription>A meal-planning app with exportable grocery lists.</PortfolioDescription>
             <IconContainer>
               <PortfolioLinks href='https://github.com/ivykroncke/pantry' target='blank'><Icon name='github' /></PortfolioLinks>
               <PortfolioLinks href='https://radiant-falls-39293.herokuapp.com/' target='blank'><Icon name='external alternate' /></PortfolioLinks>
             </IconContainer>
           </CustomCard>
+
           <CustomCard>
             <PortfolioThumbnail src='/img/artfind.jpg' alt='artfind' />
-            <h4>artfind.</h4>
-            <div>An app for discovering new artists and artworks you love.</div>
+            <PortfolioTitle>artfind.</PortfolioTitle>
+            <PortfolioDescription>An app for discovering new artists and artworks you love.</PortfolioDescription>
             <IconContainer>
               <PortfolioLinks href='https://github.com/ivykroncke/artapp' target='blank'><Icon name='github' /></PortfolioLinks>
               <PortfolioLinks href='https://kroncke-art-app.herokuapp.com/' target='blank'><Icon name="external alternate"/></PortfolioLinks>
             </IconContainer>
           </CustomCard>
+
           <CustomCard>
             <PortfolioThumbnail src='/img/birdie.jpg' alt='birdie' />
-            <h4>Birdie</h4>
-            <div>A backyard birdwatcher's companion and field guide.</div>
+            <PortfolioTitle>Birdie</PortfolioTitle>
+            <PortfolioDescription>A backyard birdwatcher's companion and field guide.</PortfolioDescription>
             <IconContainer>
               <PortfolioLinks href='https://github.com/ivykroncke/birdie' target='blank'><Icon name='github' /></PortfolioLinks>
               <PortfolioLinks href='https://birdie-app.herokuapp.com/' target='blank'><Icon name="external alternate" /></PortfolioLinks>
             </IconContainer>
           </CustomCard>
+
         </ProjectList>
       </PortfolioContainer>
     )

@@ -9,6 +9,7 @@ width: 100vw;
 display: flex;
 align-items: center;
 justify-content: center;
+padding-bottom: 5vh;
 `
 
 const StyledFooter = styled.div`

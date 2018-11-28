@@ -29,9 +29,11 @@ const AboutTextContainer = styled.div`
 width: 75vw;
 margin-left: 5vw;
 word-wrap: normal;
+text-align: justify;
 `
 
-const StyledHThree = styled.h3`
+const StyledHThree = styled.div`
+font-size: 1.75rem;
 text-align: center;
 padding-bottom: 5vh;
 `

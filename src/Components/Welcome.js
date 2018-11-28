@@ -9,17 +9,26 @@ background-image: url('https://images.unsplash.com/photo-1483058712412-4245e9b90
 background-size: cover;
 background-position: center;
 display: flex;
-align-items: center;
+align-items: flex-end;
 justify-content: flex-end;
+${media.lessThan('600px')`
+    height: 80vh;
+    justify-content: flex-start;
+    padding: 5vw;
+`}
 `
 
 const TextDiv = styled.div`
+width: 30vw;
 background-color: rgba(235, 234, 234, 0.68);
 box-shadow: 1.5rem 1.5rem 4rem rgba(91, 91, 91, 0.78);
-margin-right: 10vw;
-padding: 1vw;
+margin: 6vw;
+padding: 3vw;
 ${media.lessThan('600px')`
-    display: none;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  width: 50vw;
+  margin: 4vw;
 `}
 `
 
@@ -28,8 +37,7 @@ export default class Welcome extends Component {
     return (
       <WelcomeDiv>
         <TextDiv>
-        <div>Ivy is a full-stack web developer </div>
-        <div>and designer in Atlanta, Georgia.</div>
+        <div>Ivy is a full-stack web developer and designer in Atlanta, Georgia.</div>
         </TextDiv>
       </WelcomeDiv>
     )
