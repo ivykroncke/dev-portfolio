@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 const AppWrapper = styled.div`
 color: rgb(47, 41, 35);
+font-size: 1em;
 height: 100%;
 font-family: Lato, sans-serif;
 a {
