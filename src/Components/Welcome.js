@@ -13,7 +13,7 @@ justify-content: flex-end;
 
 const TextDiv = styled.div`
 background-color: rgba(235, 234, 234, 0.68);
-box-shadow: 1.5rem 1.5rem 4rem rgba(91, 91, 91, 0.68);
+box-shadow: 1.5rem 1.5rem 4rem rgba(91, 91, 91, 0.78);
 margin-right: 10vw;
 padding: 1vw;
 `

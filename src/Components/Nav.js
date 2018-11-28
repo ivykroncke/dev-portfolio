@@ -28,7 +28,7 @@ ${media.lessThan('600px')`
 
 const StyledNavItem = styled.a`
 color: white;
-padding: 0 1rem 2vh 1rem;
+padding: 0 1rem 0 1rem;
 text-transform: uppercase;
 `
 

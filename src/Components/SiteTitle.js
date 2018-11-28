@@ -15,7 +15,7 @@ ${media.lessThan('medium')`
 export default class SiteTitle extends Component {
     render() {
         return (
-             <Ivy>ivy kroncke</Ivy>
+             <Ivy>ivykroncke;</Ivy>
         )
     }
 }
