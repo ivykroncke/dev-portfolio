@@ -18,8 +18,8 @@ ${media.lessThan('600px')`
 `
 
 const TextDiv = styled.div`
-width: 10rem;
-height: 10rem;
+width: 12rem;
+height: 12rem;
 background-color: rgb(148, 165, 174);
 border: white solid .25rem;
 box-shadow: 1rem 1rem 3rem rgba(91, 91, 91, 0.58);
@@ -41,7 +41,7 @@ color: white;
 text-align: center;
 padding: 1.25vh 1.25vw;
 font-size: 1rem;
-line-height: 1.2rem;
+line-height: 1.25rem;
 `
 
 export default class Welcome extends Component {

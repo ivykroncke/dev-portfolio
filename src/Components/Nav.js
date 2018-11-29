@@ -23,7 +23,7 @@ const NavItemsContainer = styled.div`
 max-width: 90vw;
 display: flex; 
 align-items: center;
-font-size: 1rem;
+font-size: 2.5vh;
 ${media.lessThan('600px')`
   display: none;
   `}

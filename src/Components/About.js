@@ -31,10 +31,11 @@ width: 75vw;
 margin-left: 5vw;
 word-wrap: normal;
 text-align: justify;
+line-height: 1.5;
 `
 
 const StyledHThree = styled.div`
-font-size: 1.75rem;
+font-size: 2rem;
 text-align: center;
 padding-bottom: 5vh;
 `

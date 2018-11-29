@@ -14,7 +14,7 @@ justify-content: center;
 `
 
 const StyledHThree = styled.div`
-font-size: 1.75rem;
+font-size: 2rem;
 `
 
 const ProjectList = styled.div`
@@ -44,12 +44,13 @@ box-shadow: .75rem .75rem 1.5rem rgba(91, 91, 91, 0.58);
 `
 
 const PortfolioTitle = styled.div`
-font-size: 1.5rem;
+font-size: 1.75rem;
 padding: 4vh 0 2vh 0;
 `
 
 const PortfolioDescription = styled.div`
 width: 20vw;
+line-height: 1.25;
 align-self: center;
 ${media.lessThan('600px')`
     width: 40vw;
@@ -63,7 +64,7 @@ justify-content: center;
 `
 
 const PortfolioLinks = styled.a`
-padding: 2vh 1vw;
+padding: 4vh 1vw;
 `
 
 export default class Portfolio extends Component {
