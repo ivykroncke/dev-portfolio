@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import media from 'styled-media-query'
+import { FadeIn } from 'animate-css-styled-components'
 
-const WelcomeDiv = styled.div`
+const WelcomeDiv = styled(FadeIn)`
 width: 100%;
 height: 85vh;
 background-image: url('/img/desktop.jpg');
@@ -47,11 +48,11 @@ line-height: 1.25rem;
 export default class Welcome extends Component {
   render() {
     return (
-      <WelcomeDiv>
-        <TextDiv>
-        <Text>WEB DEVELOPER &amp; DESIGNER</Text>
-        </TextDiv>
-      </WelcomeDiv>
+        <WelcomeDiv duration="1.75s">
+          <TextDiv>
+            <Text>WEB DEVELOPER &amp; DESIGNER</Text>
+          </TextDiv>
+        </WelcomeDiv>
     )
   }
 }
