@@ -18,20 +18,24 @@ padding: 5vh 5vw;
 display: flex;
 justify-content: space-around;
 align-items: center;
-  ${media.lessThan('medium')`
-    justify-content: center;
-    width: 50vw;
-  `}
 `
+
+const IconContainer = styled.a`
+padding: 0 3vw 0 3vw;
+${media.lessThan('600px')`
+    padding: 0 5vw 0 5vw;
+`}
+`
+
 
 export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
         <StyledFooter>
-          <a href='https://github.com/ivykroncke/' target='blank'><Icon name='github' size='large' inverted /></a>
-          <a href='mailto:ivy.lane.kroncke@gmail.com'><Icon name='mail' size='large' inverted /></a>
-          <a href='https://www.linkedin.com/in/ivykroncke/' target='blank'><Icon name='linkedin' size='large' inverted/></a>
+          <IconContainer href='https://github.com/ivykroncke/' target='blank'><Icon name='github' size='large' inverted /></IconContainer>
+          <IconContainer href='mailto:ivy.lane.kroncke@gmail.com'><Icon name='mail' size='large' inverted /></IconContainer>
+          <IconContainer href='https://www.linkedin.com/in/ivykroncke/' target='blank'><Icon name='linkedin' size='large' inverted/></IconContainer>
         </StyledFooter>
       </FooterWrapper>
     )

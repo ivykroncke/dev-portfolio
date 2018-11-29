@@ -22,7 +22,7 @@ width: 12rem;
 height: 12rem;
 background-color: rgb(148, 165, 174);
 border: white solid .25rem;
-box-shadow: 1rem 1rem 3rem rgba(91, 91, 91, 0.58);
+box-shadow: 1rem 1rem 3rem rgba(91, 91, 91, 0.98);
 margin: 5vh 10vw;
 padding: 3vw;
 border-radius: 100%;
