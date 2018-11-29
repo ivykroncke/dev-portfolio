@@ -50,7 +50,6 @@ padding: 4vh 0 2vh 0;
 
 const PortfolioDescription = styled.div`
 width: 20vw;
-font-size: 1rem;
 align-self: center;
 ${media.lessThan('600px')`
     width: 40vw;

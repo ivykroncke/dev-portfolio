@@ -20,6 +20,7 @@ justify-content: space-around;
 align-items: center;
   ${media.lessThan('medium')`
     justify-content: center;
+    width: 50vw;
   `}
 `
 
