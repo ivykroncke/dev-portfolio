@@ -39,14 +39,18 @@ text-align: center;
 padding-bottom: 5vh;
 `
 
+const NewP = styled.div`
+padding-top: 2vh;
+`
+
 export default class About extends Component {
   render() {
     return (
       <AboutContainer id='about'>
         <AboutTextContainer>
           <StyledHThree>About Ivy</StyledHThree>
-          <p>is a full-stack web developer with a background in fine arts including painting and printmaking. After receiving her Bachelor's of Fine Art from the Lamar Dodd School of Art, she worked in the interior design and art nonprofit industries. Looking for a new challenge, Kroncke completed an immersive thirteen week course in Web Development from General Assembly.</p>
-          <p>Kroncke brings her design talents to web projects, combining problem-solving skills in coding with an eye for color and composition.</p>
+          <div>is a full-stack web developer with a background in fine arts including painting and printmaking. After receiving her Bachelor's of Fine Art from the Lamar Dodd School of Art, she worked in the interior design and art nonprofit industries. Looking for a new challenge, Kroncke completed an immersive thirteen week course in Web Development from General Assembly.</div>
+          <NewP>Kroncke brings her design talents to web projects, combining problem-solving skills in coding with an eye for color and composition.</NewP>
         </AboutTextContainer>
         <StyledImage />
       </AboutContainer>

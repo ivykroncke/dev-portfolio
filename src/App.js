@@ -14,7 +14,7 @@ a {
 }
 ${media.lessThan('600px')`
   width: 100vw;
-  `}
+`}
 `
 
 class App extends Component {
