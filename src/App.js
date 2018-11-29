@@ -7,7 +7,7 @@ import media from 'styled-media-query'
 const AppWrapper = styled.div`
 color: rgb(47, 41, 35);
 height: 100%;
-font-size: 1.25rem;
+font-size: 1.5rem;
 font-family: Lato, sans-serif;
 a {
   color: inherit;
