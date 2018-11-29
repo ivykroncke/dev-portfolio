@@ -23,20 +23,14 @@ align-items: center;
   `}
 `
 
-const FooterIcon = styled(Icon)`
-  /* padding: 0 3vw 0 3vw; */
-  ${media.lessThan('medium')`
-  `}
-`
-
 export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
         <StyledFooter>
-          <a href='https://github.com/ivykroncke/' target='blank'><FooterIcon name='github' size='large' inverted /></a>
-          <a href='mailto:ivy.lane.kroncke@gmail.com'><FooterIcon name='mail' size='large' inverted /></a>
-          <a href='https://www.linkedin.com/in/ivykroncke/' target='blank'><FooterIcon name='linkedin' size='large' inverted/></a>
+          <a href='https://github.com/ivykroncke/' target='blank'><Icon name='github' size='large' inverted /></a>
+          <a href='mailto:ivy.lane.kroncke@gmail.com'><Icon name='mail' size='large' inverted /></a>
+          <a href='https://www.linkedin.com/in/ivykroncke/' target='blank'><Icon name='linkedin' size='large' inverted/></a>
         </StyledFooter>
       </FooterWrapper>
     )

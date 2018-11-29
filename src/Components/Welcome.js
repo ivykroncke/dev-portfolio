@@ -5,31 +5,44 @@ import media from 'styled-media-query'
 const WelcomeDiv = styled.div`
 width: 100%;
 height: 85vh;
-background-image: url('https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=1650&q=80');
+background-image: url('/img/desktop.jpg');
 background-size: cover;
 background-position: center;
 display: flex;
 align-items: flex-end;
-justify-content: flex-end;
+justify-content: flex-start;
 ${media.lessThan('600px')`
     height: 80vh;
-    justify-content: flex-start;
     padding: 5vw;
 `}
 `
 
 const TextDiv = styled.div`
-width: 30vw;
-background-color: rgba(235, 234, 234, 0.68);
-box-shadow: 1.5rem 1.5rem 4rem rgba(91, 91, 91, 0.78);
-margin: 6vw;
+width: 10rem;
+height: 10rem;
+background-color: rgb(148, 165, 174);
+border: white solid .25rem;
+box-shadow: 1rem 1rem 3rem rgba(91, 91, 91, 0.58);
+margin: 5vh 10vw;
 padding: 3vw;
+border-radius: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
 ${media.lessThan('600px')`
   font-size: 1.25rem;
   line-height: 1.5rem;
-  width: 50vw;
   margin: 4vw;
 `}
+`
+
+const Text = styled.div`
+color: white;
+text-align: center;
+padding: 1.25vh 1.25vw;
+font-size: 1rem;
+line-height: 1.2rem;
 `
 
 export default class Welcome extends Component {
@@ -37,7 +50,7 @@ export default class Welcome extends Component {
     return (
       <WelcomeDiv>
         <TextDiv>
-        <div>Ivy is a full-stack web developer and designer in Atlanta, Georgia.</div>
+        <Text>WEB DEVELOPER &amp; DESIGNER</Text>
         </TextDiv>
       </WelcomeDiv>
     )

@@ -17,10 +17,11 @@ align-items: center;
 const StyledImage = styled.div`
 height: 30vh;
 width: 30vh;
-margin: 5vh;
+margin: 5vh 5vw 8vh 5vw;
 background-image: url('/img/ivy-headshot.jpg');
 background-size: cover;
 background-position: right;
+box-shadow: 1rem 1rem 3rem rgba(91, 91, 91, 0.58);
 border-radius: 100%;
 border: white solid .25rem;
 `
