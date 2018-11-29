@@ -12,7 +12,7 @@ display: flex;
 align-items: flex-end;
 justify-content: flex-start;
 ${media.lessThan('600px')`
-    height: 80vh;
+    height: 85vh;
     padding: 5vw;
 `}
 `
@@ -26,14 +26,13 @@ box-shadow: 1rem 1rem 3rem rgba(91, 91, 91, 0.58);
 margin: 5vh 10vw;
 padding: 3vw;
 border-radius: 100%;
-
 display: flex;
 align-items: center;
 justify-content: center;
 ${media.lessThan('600px')`
   font-size: 1.25rem;
   line-height: 1.5rem;
-  margin: 4vw;
+  margin: 0 0 11vh 5vw;
 `}
 `
 
