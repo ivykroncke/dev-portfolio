@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './Components/Home';
 import styled from 'styled-components'
 import media from 'styled-media-query'
+import Notfound from './Components/Notfound';
 
 const AppWrapper = styled.div`
 color: rgb(47, 41, 35);
@@ -24,7 +25,10 @@ class App extends Component {
     return (
       <AppWrapper>
         <Router>
+          <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='*' component={Notfound} />
+          </Switch>
         </Router>
       </AppWrapper>
     )

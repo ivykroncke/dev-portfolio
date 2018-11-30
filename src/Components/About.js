@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import media from 'styled-media-query'
 
 const AboutContainer = styled.div`
 color: white;
